@@ -1,0 +1,65 @@
+.salesTurnover {
+  background-color: #fff;
+  padding: 16px;
+  width: fit-content;
+}
+
+.salesTurnoverHeader > h3 {
+  font-weight: 600;
+  font-size: 13px;
+  line-height: 20px;
+  letter-spacing: 0px;
+  color: #707070c4;
+  margin: 0;
+}
+
+.moreIconContainer {
+  height: 17px;
+}
+
+.moreIconContainer > img {
+  height: 100%;
+  position: relative;
+  top: -5px;
+}
+
+.contentLeft > h1 {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 22px;
+  letter-spacing: 0.5px;
+  font-family: "Roboto", sans-serif;
+  color: #4b4b4b;
+  margin: 0;
+}
+
+.redArrowContainer {
+  height: 17px;
+}
+
+.redArrowContainer > img {
+  height: 100%;
+  position: relative;
+  top: -3px;
+}
+
+.contentLeft h2 {
+  color: #ff4141;
+  font-family: "Roboto", sans-serif;
+  margin: 0;
+  font-size: 13px;
+}
+
+.contentLeft p {
+  margin: 0;
+  font-size: 11px;
+  letter-spacing: -0.25px;
+}
+
+.contentRight {
+  width: 50px;
+}
+
+.contentRight > img {
+  width: 100%;
+}
