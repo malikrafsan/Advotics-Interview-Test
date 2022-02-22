@@ -1,0 +1,83 @@
+.react-bootstrap-daterangepicker-container {
+  display: block !important;
+}
+
+.daterangepicker {
+  transition: all 0.3s ease-in-out;
+  right: 24px !important;
+}
+
+.daterangepicker .drp-buttons {
+  text-align: left;
+  line-height: 48px;
+}
+
+.daterangepicker .drp-buttons .btn {
+  line-height: 32px;
+  width: 100px;
+}
+
+.daterangepicker .ranges li {
+  border-bottom: 1px solid #ddd;
+  padding: 16px;
+  margin-left: 24px;
+  border-radius: 4px;
+}
+.daterangepicker .ranges li:first-child {
+  margin-top: 16px;
+}
+.daterangepicker .ranges li:last-child {
+  border-bottom: none;
+  margin-bottom: 16px;
+}
+
+.daterangepicker .ranges li.active {
+  background-color: #37b04c;
+}
+
+.daterangepicker td.in-range,
+.daterangepicker td.active,
+.daterangepicker td.active:hover,
+.daterangepicker td.available:hover {
+  background-color: #eef8eb;
+  color: #37b04c;
+  border-color: transparent;
+  border-radius: 50%;
+  font-weight: bold;
+}
+
+.daterangepicker .ranges li:hover {
+  background-color: #289e45;
+  color: #fff;
+}
+.daterangepicker .drp-selected {
+  display: none;
+}
+
+.btn-primary {
+  color: #fff;
+  background-color: #37b04c;
+  border-color: #37b04c;
+}
+
+.btn-primary:hover {
+  color: #fff;
+  background-color: #289e45;
+  border-color: #37b04c;
+}
+
+.btn-primary:disabled {
+  color: #37b04c;
+  background-color: #eef8eb;
+  border-color: #eef8eb;
+}
+
+@media (min-width: 564px) {
+  .daterangepicker .drp-calendar.left {
+    margin: 32px 0 32px 24px;
+  }
+
+  .daterangepicker .drp-calendar.right {
+    margin: 32px 0 32px;
+  }
+}
