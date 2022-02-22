@@ -8,8 +8,12 @@
   border-radius: 2px;
 }
 
+.header {
+  margin-bottom: 16px;
+}
+
 .header > h1 {
-  font: normal normal normal 20px/13px Source Sans Pro;
+  font: normal normal normal 20px/13px "Raleway";
   letter-spacing: 0px;
   color: #4D4F5C;
 }

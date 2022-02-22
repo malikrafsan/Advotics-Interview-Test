@@ -1,7 +1,7 @@
 import Navbar from "../Navbar";
 import Sidebar from "../Sidebar";
 import DashboardContent from "../DashboardContent";
-import MarketInsights from "../MarketInsights";
+import MarketInsights from "../MarketInsight";
 import styles from "./index.module.css";
 import { useState } from "react";
 import moment from "moment";
@@ -29,7 +29,7 @@ const MainComponent = () => {
         <Sidebar />
         <div className={styles.contentContainer + " w-100"}>
           <DashboardContent onChangePeriod={handleChange} />
-          <MarketInsights />
+          <MarketInsights startDate={startDate} endDate={endDate} />
         </div>
       </div>
     </div>

@@ -61,6 +61,49 @@ class DataSrv {
       ],
     };
   }
+
+  _getProductName(idx: number) {
+    const names = [
+      "Sosis Champ",
+      "Bebelac",
+      "Sunco",
+      "Sunlight",
+      "Wipol",
+      "Sabun Klin",
+      "Porstex",
+      "Nugget Fiesta",
+      "Nugget So Good",
+      "Nugget So Nice",
+    ];
+
+    return names[idx];
+  }
+
+  getSKUData(isCompetitor: boolean) {
+    const arr = Array(5)
+      .fill({})
+      .map((_, idx) => {
+        return {
+          img:
+            "/assets/product-icon" +
+            ((isCompetitor ? 5 : 0) + idx + 1) +
+            ".jpg",
+          name: this._getProductName((isCompetitor ? 5 : 0) + idx),
+          price: Math.floor(Math.random() * 9) * 10000 + 10000,
+          qty: Math.floor(Math.random() * 10) * 10,
+        };
+      });
+
+    arr.sort((a, b) => b.qty - a.qty);
+    return arr;
+  }
+
+  getSalesData(startDate: moment.Moment, endDate: moment.Moment) {
+    return {
+      sales: Math.floor(Math.random() * 100) * 10000,
+      turnover: Math.floor(Math.random() * 100) / 10,
+    };
+  }
 }
 
 export default DataSrv;

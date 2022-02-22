@@ -14,3 +14,24 @@
   color: #ffffff;
   margin: 0;
 }
+
+.contentContainer {
+  flex-direction: column;
+}
+
+.skuCardsContainer {
+  margin-top: 24px;
+  justify-content: start;
+}
+
+@media screen and (min-width: 1300px) {
+  .contentContainer {
+    flex-direction: row;
+  }
+  .skuCardsContainer {
+    margin-top: 0;
+    flex-grow: 2;
+    max-width: 900px;
+    justify-content: space-evenly;
+  }
+}

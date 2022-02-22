@@ -34,14 +34,6 @@ const Chart = React.forwardRef((props, ref: LegacyRef<HTMLDivElement>) => {
   const periodOptions = ["Yesterday", "Last 7 Days", "This Month", "Custom"];
   const [period, setPeriod] = useState(periodOptions[1]);
 
-  const chartColors = {
-    net: "rgba(55, 176, 76, 0.5)",
-    gross: "rgba(40, 158, 69, 0.5)",
-    apv: "rgba(22, 226, 140, 0.5)",
-    upt: "rgba(112, 112, 112, 0.5)",
-    line: "rgba(75, 192, 192, 0.5)",
-  };
-
   const dataSrv = new DataSrv();
   const data = dataSrv.getChartData(period);
 
