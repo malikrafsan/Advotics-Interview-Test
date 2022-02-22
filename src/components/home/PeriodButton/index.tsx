@@ -39,4 +39,6 @@ const PeriodButton = React.forwardRef(
   }
 );
 
+PeriodButton.displayName = "PeriodButton";
+
 export default PeriodButton;

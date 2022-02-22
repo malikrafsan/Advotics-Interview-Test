@@ -116,4 +116,6 @@ const Chart = React.forwardRef((props, ref: LegacyRef<HTMLDivElement>) => {
   );
 });
 
+Chart.displayName = "Chart";
+
 export default Chart;

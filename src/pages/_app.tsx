@@ -5,8 +5,9 @@ import "../styles/globals.css";
 import "../styles/period-filter.css";
 import "../styles/accordion.css";
 import "../styles/dropdown.css";
+import { FC } from "react";
 
-function MyApp({ Component, pageProps }) {
+function MyApp({ Component, pageProps }: { Component: FC; pageProps: any }) {
   return <Component {...pageProps} />;
 }
 
