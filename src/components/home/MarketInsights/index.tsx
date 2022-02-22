@@ -14,7 +14,7 @@ const MarketInsights = () => {
             <h1>MARKET INSIGHTS</h1>
             <div style={{ flexGrow: 2 }}></div>
             <div className="d-flex align-items-center me-2">
-              <img src="/assets/help.png" alt="help icon" className="me-2" />
+              <img src="/assets/help-icon.png" alt="help icon" className="me-2" />
               <h2>Click here for help</h2>
             </div>
           </Accordion.Header>

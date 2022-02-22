@@ -10,7 +10,7 @@ import {
   Legend,
   PointElement,
   LineElement,
-  ChartData,
+  LineController,
   ChartOptions,
 } from "chart.js";
 import styles from "./index.module.css";
@@ -26,7 +26,8 @@ ChartJS.register(
   Tooltip,
   Legend,
   PointElement,
-  LineElement
+  LineElement,
+  LineController,
 );
 
 const Chart = React.forwardRef((props, ref: LegacyRef<HTMLDivElement>) => {
