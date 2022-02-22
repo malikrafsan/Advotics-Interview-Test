@@ -1,0 +1,74 @@
+.container {
+  width: 275px;
+  background: #ffffff 0% 0% no-repeat padding-box;
+  box-shadow: 0px 2px 6px #0000000a;
+  border: 0.5px solid #caced5;
+  border-radius: 2px;
+  padding: 16px;
+  margin: 0 8px;
+}
+
+.header {
+  margin-bottom: 16px;
+}
+
+.header > h1 {
+  font: normal normal 600 16px/25px "Raleway";
+  letter-spacing: 0px;
+  color: #4d4f5c;
+  margin: 0;
+}
+
+.topItemContainer {
+  background-color: #ffe7bd;
+  border-radius: 4px;
+}
+
+.topItemContainer .itemImgContainer {
+  width: 80px;
+  height: 80px;
+}
+
+.itemContainer {
+  margin-top: 8px;
+  border: 0.5px solid #c5c5c59c;
+  border-radius: 4px;
+}
+
+.itemContainer .itemImgContainer {
+  width: 60px;
+  height: 60px;
+}
+
+.itemImgContainer {
+  border: 0.5px solid #caced5;
+  border-radius: 4px;
+  overflow: hidden;
+}
+
+.itemImgContainer > img {
+  width: 100%;
+  height: 100%;
+}
+
+.itemInfo {
+  padding: 8px 24px 7px 8px;
+  flex-grow: 2;
+}
+
+.itemName {
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 20px;
+  letter-spacing: 0px;
+  color: #000000DE;
+  margin-bottom: 8px;
+}
+
+.itemStats {
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 17px;
+  letter-spacing: 0px;
+  color: #00000099;
+}
