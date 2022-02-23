@@ -1,34 +1,61 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Advotics Interview Test
 
-## Getting Started
+> A web application that contains a dashboard for users to monitor sales progress
 
-First, run the development server:
+## Description
 
-```bash
-npm run dev
-# or
-yarn dev
-```
+> This Web application is developed for Advotics interview test. This test is to develop a dashboard. A Dashboard is a user interface that organizes and presents complex data with easy to digest visualization. This web app is deployed on Vercel using CI/CD from Vercelbot. You can access the web application [here](https://advotics-interview-test.vercel.app/)
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Features
 
-You can start editing the page by modifying `pages/index.tsx`. The page auto-updates as you edit the file.
+- Sliding sidebar
+- Date range picking using calendar and period options
+- Accordion of Market Insight
+- Fluid sales chart based on chosed period options
+- SKU Card of top 5 sold products
 
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.ts`.
+## Libraries and Packages Used
 
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
+- next js
+- bootstrap and react-bootstrap
+- bootstrap-daterangepicker and react-bootstrap-daterangepicker
+- chart.js and react-chartjs-2
+- hamburger-react
+- moment
 
-## Learn More
+## Views
 
-To learn more about Next.js, take a look at the following resources:
+- Desktop view
+  ![Desktop view](imgs/desktop-view.png)
+- Tablet view
+  ![Tablet view](imgs/tablet-view.png)
+- Period filter
+  ![Period filter](imgs/period-filter.png)
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+> Due to no mock up design for mobile, mobile view is not implemented yet
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+## Setup
 
-## Deploy on Vercel
+You need to have Node JS and npm installed on your computer.
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+## How to run
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+- Download this repository or clone it by
+  ```
+  git clone https://github.com/malikrafsan/Advotics-Interview-Test.git
+  ```
+- Change directory to the cloned repo
+  ```sh
+  cd Advotics-Interview-Test
+  ```
+- Install dependencies and run locally
+  ```
+  npm install
+  npm run dev
+  ```
+- Open your web browser on `http://localhost:3000/`
+- You can also access the deployed web app [here](https://advotics-interview-test.vercel.app/)
+
+## Developed by
+
+- Malik Akbar Hashemi Rafsanjani
