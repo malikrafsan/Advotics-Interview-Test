@@ -20,7 +20,10 @@ const MarketInsights = ({
           >
             <h1>MARKET INSIGHTS</h1>
             <div style={{ flexGrow: 2 }}></div>
-            <div className="d-flex align-items-center me-2">
+            <div
+              className="d-flex align-items-center me-2"
+              title="No implementation"
+            >
               <img
                 src="/assets/help-icon.png"
                 alt="help icon"

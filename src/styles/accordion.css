@@ -2,6 +2,10 @@
   background-color: transparent;
 }
 
+.accordion-item * {
+  z-index: 1 !important;
+}
+
 .accordion-body {
   padding: 1rem 0;
 }

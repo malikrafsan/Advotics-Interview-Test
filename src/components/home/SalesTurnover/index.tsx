@@ -32,7 +32,7 @@ const SalesTurnover = ({
         }
       >
         <h3>Sales Turnover</h3>
-        <div className={styles.moreIconContainer}>
+        <div className={styles.moreIconContainer} title="No implementation">
           <img src="/assets/more-options.svg" alt="more options" />
         </div>
       </div>

@@ -27,7 +27,7 @@ ChartJS.register(
   Legend,
   PointElement,
   LineElement,
-  LineController,
+  LineController
 );
 
 const Chart = React.forwardRef((props, ref: LegacyRef<HTMLDivElement>) => {
@@ -99,7 +99,10 @@ const Chart = React.forwardRef((props, ref: LegacyRef<HTMLDivElement>) => {
               );
             })}
           </DropdownButton>
-          <div className={styles.moreOptionsContainer + " ms-2"}>
+          <div
+            className={styles.moreOptionsContainer + " ms-2"}
+            title="No implementation"
+          >
             <img src="/assets/more-options.svg" alt="more options" />
           </div>
         </div>

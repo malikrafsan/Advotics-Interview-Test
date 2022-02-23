@@ -64,8 +64,6 @@ const DashboardContent = ({ onChangePeriod }: { onChangePeriod: Function }) => {
       `;
     div.innerHTML = inner;
     daterangepicker?.prepend(div);
-    // li.
-    // daterangepicker?.appendChild(li);
   }, []);
 
   return (
