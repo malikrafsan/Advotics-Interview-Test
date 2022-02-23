@@ -26,10 +26,15 @@
 ## Views
 
 - Desktop view
+
   ![Desktop view](imgs/desktop-view.png)
+
 - Tablet view
+  
   ![Tablet view](imgs/tablet-view.png)
+
 - Period filter
+
   ![Period filter](imgs/period-filter.png)
 
 > Due to no mock up design for mobile, mobile view is not implemented yet
