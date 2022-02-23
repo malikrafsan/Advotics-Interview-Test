@@ -1,3 +1,7 @@
+.container {
+  margin-bottom: 30px;
+}
+
 .header > h1 {
   font-weight: 600;
   font-size: 28px;

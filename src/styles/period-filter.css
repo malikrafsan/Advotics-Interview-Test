@@ -5,30 +5,64 @@
 .daterangepicker {
   transition: all 0.3s ease-in-out;
   right: 24px !important;
+  padding: 20px;
+}
+
+.daterangepicker .header .img-container {
+  width: 25px;
+  height: 25px;
+  margin-right: 16px;
+}
+
+.daterangepicker .header .img-container > img {
+  width: 100%;
+  height: 100%;
+}
+
+.daterangepicker .header h1 {
+  color: #8B8B8B;
+  font-size: 16px;
+  line-height: 22px;
+  letter-spacing: 0px;
+  margin: 0;
+}
+
+.daterangepicker .header > .right {
+  color: #8B8B8B;
+  font-size: 20px;
+}
+
+.daterangepicker .header > .rigth:hover {
+  cursor: pointer;
 }
 
 .daterangepicker .drp-buttons {
   text-align: left;
   line-height: 48px;
+  border-top: none;
+  width: 140px;
+  padding: 0;
 }
 
 .daterangepicker .drp-buttons .btn {
   line-height: 32px;
   width: 100px;
+  margin-left: 0;
+  width: 100%;
+}
+
+.daterangepicker.show-calendar .ranges {
+  margin-top: 0;
+  padding-right: 16px;
 }
 
 .daterangepicker .ranges li {
   border-bottom: 1px solid #ddd;
-  padding: 16px;
-  margin-left: 24px;
+  padding: 16px 8px;
   border-radius: 4px;
-}
-.daterangepicker .ranges li:first-child {
-  margin-top: 16px;
 }
 .daterangepicker .ranges li:last-child {
   border-bottom: none;
-  margin-bottom: 16px;
 }
 
 .daterangepicker .ranges li.active {
@@ -72,12 +106,42 @@
   border-color: #eef8eb;
 }
 
-@media (min-width: 564px) {
-  .daterangepicker .drp-calendar.left {
-    margin: 32px 0 32px 24px;
-  }
+.daterangepicker .cancelBtn {
+  display: none;
+}
 
-  .daterangepicker .drp-calendar.right {
-    margin: 32px 0 32px;
-  }
+.daterangepicker.show-ranges.ltr .drp-calendar.left {
+  border-left: none;
+}
+
+.daterangepicker .drp-calendar.right {
+  margin: 0;
+}
+
+.daterangepicker .drp-calendar.left,
+.daterangepicker .drp-calendar.right {
+  height: 260px;
+  padding: 0;
+}
+
+.daterangepicker .calendar-table {
+  height: 290px;
+  padding: 8px;
+  border-left: 1px solid #ddd;
+  position: relative;
+  top: 10px;
+}
+
+.daterangepicker .table-condensed {
+  height: 100%;
+  padding: 0 8px;
+}
+
+.daterangepicker .drp-calendar.left .table-condensed {
+  border-left: 1px solid #ddd;
+}
+
+.daterangepicker:before,
+.daterangepicker:after {
+  display: none;
 }

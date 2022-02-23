@@ -1,7 +1,7 @@
 import DateRangePicker from "react-bootstrap-daterangepicker";
 import moment from "moment";
 import "moment/min/locales";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import PeriodButton from "../PeriodButton";
 import styles from "./index.module.css";
 
@@ -39,8 +39,37 @@ const DashboardContent = ({ onChangePeriod }: { onChangePeriod: Function }) => {
     onChangePeriod({ startDate, endDate, days });
   };
 
+  const handleClick = function () {
+    const applyBtn = document.querySelector(
+      '.daterangepicker .applyBtn'
+    ) as HTMLElement;
+    applyBtn.click();
+  };
+
+  useEffect(() => {
+    const daterangepicker = document.querySelector(".daterangepicker");
+    console.log(daterangepicker);
+    const div = document.createElement("div");
+    div.className = "header d-flex justify-content-between";
+    const inner = `
+        <div class="left d-flex align-items-center">
+          <div class="img-container">
+            <img src="/assets/calendar-icon.png" alt="calendar icon" />
+          </div>
+          <h1>Period</h1>
+        </div>
+        <div class="right d-flex align-items-center" onclick="(${handleClick})()">
+          &#10006;
+        </div>
+      `;
+    div.innerHTML = inner;
+    daterangepicker?.prepend(div);
+    // li.
+    // daterangepicker?.appendChild(li);
+  }, []);
+
   return (
-    <div className={styles.container + " w-100 mb-5"}>
+    <div className={styles.container + " w-100"}>
       <div
         className={
           styles.header +
